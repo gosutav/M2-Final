@@ -24,110 +24,95 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Mi página ♥</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <asdads class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </asdads>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#about-me">Sobre mí</a>
+            <a class="nav-link" href="#projects">Proyectos</a>
+            <a class="nav-link" href="#contact">Contacto</a>
+          </div>
+        </div>
       </div>
     </nav>
+    <!-- About Me -->
+    <div class="card text-center vertical" id="about-me">
+      <div class="card-header about">Sobre mí</div>
+      <div class="text-space">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore
+          quas repudiandae sit officia. Facilis sunt illum accusamus quam
+          quibusdam beatae sint, maiores tempore nihil, consectetur in esse
+          molestiae magna Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Temporibus ab, recusandae, nostrum in pariatur molestiae
+          voluptates perspiciatis tempore doloremque alias libero quae magnam,
+          ut eum consequatur laborum reprehenderit totam quo. Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Suscipit delectus, minus
+          nostrum ipsam molestiae provident neque aperiam tempora. Excepturi
+          molestias voluptas consequuntur deserunt culpa laborum debitis
+          praesentium commodi, veniam provident. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Accusantium fugiat ut magni! Error in
+          dignissimos sit nulla velit et autem dolor corporis ea nostrum
+          pariatur ipsam numquam temporibus, repellat quam.
+        </p>
+      </div>
+    </div>
     <!-- Tarjetas-->
-    <div class="container">
-      <h1 class="text-center">CONTENIDO PRO</h1>
+    <div>
+      <div class="card text-center vertical" id="projects">
+        <div class="card-header about">Proyectos</div>
+        <div class="text-space">
+          <div class="card-display">
+            <div class="card card-size">
+              <img src="./Assets/Imgs/P1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="./pages/proyecto1.html" class="btn btn-primary">
+                  Proyecto 1</a
+                >
+              </div>
+            </div>
 
-      <div class="row">
-        <div class="card" style="width: 18rem">
-          <img src="./Assets/Imgs/P1.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./proyecto1.html" class="btn btn-primary">Proyecto 1</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./proyecto2.html" class="btn btn-primary">Proyecto 2</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="./proyecto3.html" class="btn btn-primary">Proyecto 3</a>
+            <div class="">
+              <div class="card card-size">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="./pages/proyecto2.html" class="btn btn-primary"
+                    >Proyecto 2</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Info de contacto -->
-    <div class="card text-center">
-      <div class="card-header xulpico">Información de contacto</div>
-      <div class="card-body">
+    <div class="card text-center" id="contact">
+      <div class="card-header contacto">Contáctame!</div>
+      <div class="card-body contact-form">
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">+56</span>
           <input
@@ -147,13 +132,13 @@
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           />
-          <span class="input-group-text" id="basic-addon2">@gmail.com</span>
         </div>
         <div class="input-group">
-          <span class="input-group-text">With textarea</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
+          <textarea class="form-control" placeholder="Mensaje"></textarea>
         </div>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary" style="margin: 25px 0px">
+          Enviar
+        </button>
       </div>
     </div>
   </body>

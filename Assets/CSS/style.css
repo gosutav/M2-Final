@@ -1,0 +1,50 @@
+.vertical{
+margin: 50px 0px;
+}
+
+.text-space{
+padding: 75px 225px;
+}
+
+.card-display{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.card-size{
+
+    width: 18rem;
+
+}
+
+.contact-form{
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 719px){
+
+    .text-space{
+        padding: 5% 5%;
+    }
+
+    .card-display{
+
+        display: block;
+
+    }
+    
+    .card-size{
+
+        width: 100%;
+        margin: 5rem 0rem;
+
+    }
+
+    .contact-form{
+
+        width: 100%;
+        margin: 0 auto;
+    }
+}
