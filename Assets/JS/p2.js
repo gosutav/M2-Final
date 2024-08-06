@@ -31,8 +31,8 @@ function crearPersonaje(){
     
         nuevoNombre.textContent = char1.nombre;
     
-        document.getElementById("OnePiece").appendChild(nuevoNombre);
-        document.getElementById("OnePiece").appendChild(nuevoImg);
+        document.getElementById("pjs").appendChild(nuevoNombre);
+        document.getElementById("pjs").appendChild(nuevoImg);
     
         console.log(char1)
 

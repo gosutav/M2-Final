@@ -33,8 +33,6 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,20 +50,10 @@
       <div class="card-header about">Sobre mí</div>
       <div class="text-space">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore
-          quas repudiandae sit officia. Facilis sunt illum accusamus quam
-          quibusdam beatae sint, maiores tempore nihil, consectetur in esse
-          molestiae magna Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Temporibus ab, recusandae, nostrum in pariatur molestiae
-          voluptates perspiciatis tempore doloremque alias libero quae magnam,
-          ut eum consequatur laborum reprehenderit totam quo. Lorem ipsum, dolor
-          sit amet consectetur adipisicing elit. Suscipit delectus, minus
-          nostrum ipsam molestiae provident neque aperiam tempora. Excepturi
-          molestias voluptas consequuntur deserunt culpa laborum debitis
-          praesentium commodi, veniam provident. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Accusantium fugiat ut magni! Error in
-          dignissimos sit nulla velit et autem dolor corporis ea nostrum
-          pariatur ipsam numquam temporibus, repellat quam.
+          Mi nombre es Gustavo Pinto. Con formación en Filosofía y Ciencia de la
+          Computación, me encuentro actualmente cursando el bootcamp para ser
+          desarrollador Fullstack JavaScript ofrecido por el programa Talento
+          Digital para Chile.
         </p>
       </div>
     </div>
@@ -75,31 +63,32 @@
         <div class="card-header about">Proyectos</div>
         <div class="text-space">
           <div class="card-display">
-            <div class="card card-size">
+            <div class="card card-size" style="padding-top: 15px">
               <img src="./Assets/Imgs/P1.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h5 class="card-title">Conversor de USD a CLP</h5>
+                <p class="card-text">Evalúa el dolar a $955.09 CLP</p>
                 <a href="./pages/proyecto1.html" class="btn btn-primary">
-                  Proyecto 1</a
+                  Conversor</a
                 >
               </div>
             </div>
 
             <div class="">
-              <div class="card card-size">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card card-size" style="padding-top: 15px">
+                <img
+                  src="./Assets/Imgs/P2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Creador de Personajes</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Ingresa el nombre de tu personaje junto con la URL de una
+                    imagen de él para verlo aparecer!
                   </p>
                   <a href="./pages/proyecto2.html" class="btn btn-primary"
-                    >Proyecto 2</a
+                    >Crear</a
                   >
                 </div>
               </div>
@@ -110,37 +99,42 @@
     </div>
 
     <!-- Info de contacto -->
-     <form action="">
-    <div class="card text-center" id="contact">
-      <div class="card-header contacto">Contáctame!</div>
-      <div class="card-body contact-form">
-        <div class="input-group mb-3" >
-          <span class="input-group-text" id="basic-addon1">+56</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Número de telefono"
-            pattern="[0-9]+"
-          />
-        </div>
+    <form action="./pages/contacto.html" method="post">
+      <div class="card text-center" id="contact">
+        <div class="card-header contacto">Contáctame!</div>
+        <div class="card-body contact-form">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">+56</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Número de telefono"
+              pattern="[0-9]+"
+              required
+            />
+          </div>
 
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Correo electrónico"
-            
-          />
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Correo electrónico"
+              pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <textarea class="form-control" placeholder="Mensaje"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="margin: 25px 0px"
+          >
+            Enviar
+          </button>
         </div>
-        <div class="input-group">
-          <textarea class="form-control" placeholder="Mensaje"></textarea>
-        </div>
-        <button type="button" class="btn btn-primary" style="margin: 25px 0px">
-          Enviar
-        </button>
-      
       </div>
-    </div>
+    </form>
   </body>
-  
 </html>
